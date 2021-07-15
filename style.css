@@ -1,0 +1,249 @@
+/* font link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding:0;
+    
+}
+
+/*--------------- banner-section-------------- */
+
+.banner-section{
+    display:flex;
+    background: #2D25A0;
+    justify-content: space-around;
+    height: 660px;
+    margin-bottom: 70px;
+}
+
+.banner-section-title{
+    width: 50%;
+}
+.banner-section-title h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    margin:207px 0 0 153px;
+    margin-bottom: 27px;
+}
+.banner-section-title a{
+    padding: 10px 24px;
+    text-decoration: none;
+    margin-left:153px;
+    color: white;
+    background: #E02C6D;
+    transition: 1s ease-in-out;
+}
+.banner-section-title a:hover{
+    padding-right: 50px;
+}
+
+.banner-section-title a span{
+    margin-left: 8px;
+   
+}
+
+
+.banner-section-image{
+width: 50%;
+
+}
+
+.banner-section-image img{
+    width: 556px;
+height: 438px;
+padding-top: 150px;
+transition: 1s ease-in-out;
+
+}
+.banner-section-image img:hover{
+    width: 600px;
+   height: 500px;
+}
+
+
+
+/* -----------football-players-section --------*/
+
+.football-players-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.football-players{
+    display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+    width: 1050px;
+    grid-template-columns: repeat(3,1fr);
+}
+.player {
+    padding:15px 15px 30px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.player img{
+ 
+    width: 300px;
+height: 256px;
+}
+.player h2{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+.player p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+   margin-bottom: 15px;
+}
+
+/*-------- video-section --------*/
+.video-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.video{
+    width: 1050px;
+    height: 400px;
+}
+
+/* ----players-gallery ------*/
+
+.players-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.players-gallery h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.gallery{
+    display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+    width: 1050px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.gallery-picture img{
+ 
+    width: 300px;
+height: 256px;
+}
+
+
+/* ------footer section ----- */
+footer{
+    text-align: center;
+}
+footer img{
+    width: 483px;
+height: 110px;
+}
+footer .icon i{
+    margin-right: 20px;
+    border: 1px solid transparent;
+    padding:10px;
+    border-radius: 100%;
+    color:white;
+    background-color: gray;
+}
+
+/* -----Media query -----*/
+
+@media only screen and (min-width: 370px) and (max-width:600px) {
+    .banner-section{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+       
+        
+    }
+    .banner-section-title h1{
+        font-size: 36px;
+        margin-left: 25px;
+        margin-top: 112px;
+
+    }
+    .banner-section-image img{
+        width: 300px;
+         height: 259px;
+        transition: 1s ease-in-out;
+    }
+    .banner-section-image img:hover{
+        width: 320px;
+       height: 250px;
+    }
+
+    .banner-section-title a{
+      
+        margin-left: 25px;
+        transition: 1s ease-in-out;
+    }
+    
+    .banner-section-title a:hover{
+        padding-right: 30px;
+    }
+
+    .banner-section-image img {
+      padding-top: 100px;
+        
+    }
+
+    /* football-players-section */
+
+
+    .football-players{
+        width: 330px;
+      grid-column-gap: 0;
+      grid-row-gap: 20px;
+   grid-template-columns: repeat(1,1fr);
+    }
+    .player img{
+        width: 300px;
+        height: 256px;
+    }
+
+
+    /* video-section */
+    .video-section{
+    
+        margin-bottom: 100px;
+    }
+    .video{
+        width: 90%;
+    }
+
+    /* players-gallery */
+    
+
+    
+    .gallery{
+        width: 300px;
+      grid-column-gap: 0;
+      grid-row-gap: 20px;
+   grid-template-columns: repeat(1,1fr);
+    }
+    .gallery-picture img{
+width: 300px;
+    }
+    
+    
+
+footer img{
+    width: 70%;
+}
+
+
+
+  }
+  
